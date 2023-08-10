@@ -37,23 +37,23 @@ iconfont-tools  // 生成小程序专用文件
     ├── iconfont.ttf
     ├── iconfont.woff
     └── iconfont.woff2
-    ├── iconfont-weapp        # 目标文件夹
+    ├── codesign-weapp        # 目标文件夹
     │   ├── icon              # 生成原生的icon组件库
     │   │   ├── icon.js
     │   │   ├── icon.json
     │   │   ├── icon.wxml
     │   │   └── icon.wxss
-    │   ├── iconfont-weapp-icon.css  # 包含彩色图标的css
-    │   └── iconfont-weapp-icon.wxss # 包含彩色图标的wxss
+    │   ├── codesign-weapp-icon.css  # 包含彩色图标的css
+    │   └── codesign-weapp-icon.wxss # 包含彩色图标的wxss
 
 ```
 
 最后：
 
-- 方式一：引入小程序项目： @import '/your/path/font_hiytajitqeu/iconfont-weapp/iconfont-weapp-icon.wxss'
-- 方式二：注册组件："icon": "/your/path/font_hiytajitqeu/iconfont-weapp/icon"
+- 方式一：引入小程序项目： @import '/your/path/font_hiytajitqeu/codesign-weapp/codesign-weapp-icon.wxss'
+- 方式二：注册组件："icon": "/your/path/font_hiytajitqeu/codesign-weapp/icon"
 
-其他小程序框架，taro，wepy，mpvue 等等，可以直接通过引入`iconfont-weapp-icon.css`文件，实现。
+其他小程序框架，taro，wepy，mpvue 等等，可以直接通过引入`codesign-weapp-icon.css`文件，实现。
 
 ## 原理
 

@@ -28,7 +28,7 @@ export class Match {
   svgs: Svg[]
   css: string
 
-  constructor(prefixIcon: string = 't-icon', size: string = '16px') {
+  constructor(prefixIcon: string = 'h-icon', size: string = '16px') {
     this.content = ''
     this.icons = []
     this.svgs = []
@@ -67,12 +67,12 @@ export class Match {
   svg2DataUrl(svgStr: string): string {
     svgStr = svgStr.replace(
       /\<svg/,
-      `<?xml version="1.0" encoding="utf-8"?><svg version="1.1" width='100%' height='100%' xmlns="http://www.w3.org/2000/svg"`,
+      `<?xml version="1.0" encoding="utf-8"?><svg version="1.1" width='100%' height='100%'`,
     )
     const encoded: string = encodeURIComponent(svgStr)
       .replace(/'/g, '%27')
       .replace(/"/g, '%22')
-    return `data:image/svg+xml,${encoded}`
+    return `"data:image/svg+xml,${encoded}"`
   }
   generateSvg(): Match {
     const { svg2DataUrl, icons } = this

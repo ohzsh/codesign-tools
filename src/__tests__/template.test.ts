@@ -7,7 +7,7 @@ const root = path.resolve('')
 const testPath = root + '/asset/font_hiytajitqeu/icon'
 
 test('component create', async function() {
-  const files = await component(testPath, 't-icon', 'iconfont-weapp.css')
+  const files = await component(testPath, 'h-icon', 'codesign-weapp.css')
   expect(files.length).toBe(4)
 })
 

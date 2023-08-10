@@ -8,11 +8,11 @@ import { OPT } from './interface'
 import { generatePath } from './utils'
 
 const DEFAULT_OPTION: OPT = {
-  iconfontUrl: '',
+  codesignUrl: '',
   path: process.cwd(),
-  dirName: 'iconfont-weapp',
-  fileName: 'iconfont-weapp-icon',
-  icon: 't-icon',
+  dirName: 'codesign-weapp',
+  fileName: 'codesign-weapp-icon',
+  icon: 'h-icon',
   fontSize: '16px',
   component: true,
 }
@@ -27,7 +27,7 @@ const checkVersion = () => {
 
 const inquirerHandler = async () => {
   let path = process.cwd()
-  let iconfontUrl = ''
+  let codesignUrl = ''
   const paramsForm = process.argv[2]
   const paramsFormUrl = process.argv[3]
   const paramsTo = process.argv[4]
@@ -37,7 +37,7 @@ const inquirerHandler = async () => {
     if (!paramsFormUrl) {
       throw new Error('--from 参数不能为空')
     }
-    iconfontUrl = paramsFormUrl
+    codesignUrl = paramsFormUrl
   }
 
   if (['--to'].includes(paramsTo)) {
@@ -79,7 +79,7 @@ const inquirerHandler = async () => {
   })
 
   return {
-    iconfontUrl,
+    codesignUrl,
     path,
     dirName,
     fileName,

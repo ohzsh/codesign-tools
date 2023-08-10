@@ -4,13 +4,13 @@ import { Extract } from '../extract'
 
 const root = path.resolve('')
 const testPath = root + '/asset/font_hiytajitqeu'
-const dirName = 'iconfont-weapp'
+const dirName = 'codesign-weapp'
 const fileName = 'iconfont.css'
 const ext = new Extract(testPath, dirName, fileName)
 
 test('Extract mkdir', async function() {
   await ext.generateDir()
-  const fgt = fs.statSync(`${testPath}/iconfont-weapp`)
+  const fgt = fs.statSync(`${testPath}/codesign-weapp`)
   expect(fgt.isDirectory()).toBe(true)
 })
 

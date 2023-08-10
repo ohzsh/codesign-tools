@@ -8,7 +8,7 @@ export interface Icon {
 }
 
 export interface OPT {
-  iconfontUrl: string
+  codesignUrl: string
   path: string
   dirName: string
   fileName: string

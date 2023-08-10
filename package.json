@@ -1,10 +1,10 @@
 {
-  "name": "iconfont-tools",
+  "name": "codesign-tools",
   "version": "1.7.13",
-  "description": "iconfont，小程序彩色图标方案，小程序彩色iconfont",
+  "description": "codesign，小程序彩色图标方案，小程序彩色codesign",
   "main": "lib/index.js",
   "bin": {
-    "iconfont-tools": "lib/cli.js"
+    "codesign-tools": "lib/cli.js"
   },
   "types": "lib/index.d.ts",
   "scripts": {
@@ -22,16 +22,16 @@
     "npm": "git push --follow-tags origin master && npm publish"
   },
   "keywords": [
-    "iconfont",
-    "iconfont-tool",
+    "codesign",
+    "codesign-tool",
     "小程序彩色图标方案",
-    "小程序彩色iconfont"
+    "小程序彩色codesign"
   ],
-  "author": "HuaRongSAO",
+  "author": "ohzsh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HuaRongSAO/iconfont-tools"
+    "url": "https://github.com/ohzsh/codesign-tools"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.2.1",

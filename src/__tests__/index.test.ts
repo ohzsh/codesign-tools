@@ -7,11 +7,11 @@ const root = path.resolve('')
 const TARGET_PATH: string = root + '/asset/font_hiytajitqeu'
 
 const DEFAULT_OPTION = {
-  iconfontUrl: '',
+  codesignUrl: '',
   path: TARGET_PATH,
-  dirName: 'iconfont-weapp',
-  fileName: 'iconfont-weapp.css',
-  icon: 't-icon',
+  dirName: 'codesign-weapp',
+  fileName: 'codesign-weapp.css',
+  icon: 'h-icon',
   fontSize: '16px',
   component: true,
 }
@@ -36,11 +36,11 @@ test('create remove', async function() {
 
 const TARGET_PATH2: string = root + '/asset/icon'
 const REMOTE_OPTION = {
-  iconfontUrl: '//at.alicdn.com/t/font_1755668_uulxma8d9x.js',
+  codesignUrl: '//at.alicdn.com/t/font_1755668_uulxma8d9x.js',
   path: TARGET_PATH2,
-  dirName: 'iconfont-weapp',
-  fileName: 'iconfont-weapp.css',
-  icon: 't-icon',
+  dirName: 'codesign-weapp',
+  fileName: 'codesign-weapp.css',
+  icon: 'h-icon',
   fontSize: '16px',
   component: true,
 }
