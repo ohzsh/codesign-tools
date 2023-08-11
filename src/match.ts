@@ -65,10 +65,12 @@ export class Match {
     return this
   }
   svg2DataUrl(svgStr: string): string {
-    svgStr = svgStr.replace(
-      /\<svg/,
-      `<?xml version="1.0" encoding="utf-8"?><svg version="1.1" width='100%' height='100%'`,
-    )
+    svgStr = svgStr
+      .replace('xmlns="http://www.w3.org/2000/svg"', '')
+      .replace(
+        /\<svg/,
+        '<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width=\'100%\' height=\'100%\'',
+      )
     const encoded: string = encodeURIComponent(svgStr)
       .replace(/'/g, '%27')
       .replace(/"/g, '%22')
