@@ -14,7 +14,7 @@ const DEFAULT_OPTION: OPT = {
   fileName: 'codesign-weapp-icon',
   icon: 'h-icon',
   fontSize: '16px',
-  component: true,
+  component: false,
 }
 
 const checkVersion = () => {
